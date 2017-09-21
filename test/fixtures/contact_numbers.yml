@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  office_c: MyString
+  home_c: MyString
+  private_c: MyString
+
+two:
+  office_c: MyString
+  home_c: MyString
+  private_c: MyString

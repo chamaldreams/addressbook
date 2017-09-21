@@ -1,0 +1,28 @@
+<% if @profile.exists? %>     
+      
+         <table class="table table-striped">
+         <tr>
+         <th>First Name</th>
+         <th>Last Name</th>
+         <th>Email</th>
+         <th>Profile create</th>
+         
+         </tr>
+<% @profile.each do |profile| %>
+
+         <tr>
+              <td><%= profile.first_name %></td>
+              <td><%= profile.last_name%></td>
+              <td><%= profile.email%></td>
+              <td><%= profile.created_at.to_time.strftime('%B %e at %l:%M %p') %></td>
+              <td><%= link_to "Edit", edit_profile_path(profile), class: 'btn btn-primary' %> <%= link_to "Delete", profile_path(profile), class: 'btn btn-danger', method:  :delete, data: {confirm: 'Are you sure?'} %></td>
+        </tr>
+<% end %>
+         </table>
+
+
+<% else %>
+ <p>There are no posts</p>
+
+ <% end %>         
+     

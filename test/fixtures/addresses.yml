@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  home_add: MyString
+  office_add: MyString
+  delivery_add: MyString
+
+two:
+  home_add: MyString
+  office_add: MyString
+  delivery_add: MyString
